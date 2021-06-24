@@ -35,15 +35,21 @@ class Calculator extends React.Component
                     <div className="row">
                         <div className="col-md-5">
                             <div className='card '>
-                                <div className="card-body bg-dark text-center rounded-3 ">
-                                <input value={celsius} onChange={this.celsiusValue}/>
-                                </div>
+                                <div className='card-header bg-secondary text-center text-white'>
+                                    <h3>Celsius</h3>
+                                    <div className="card-body bg-dark text-center rounded-3 ">
+                                        <input value={celsius} onChange={this.celsiusValue}/>
+                                    </div>
+                                </div>>
                             </div>
                         </div>
                         <div className="col-md-5">
                             <div className='card'>
-                                <div className="card-body bg-success text-center rounded-3">
-                                <input value={fahrenheit} onChange={this.fahrenheitValue}/>
+                                 <div className='card-header text-white bg-warning text-center'>
+                                    <h3>Fahrenheit</h3>
+                                        <div className="card-body bg-success text-center rounded-3">
+                                             <input value={fahrenheit} onChange={this.fahrenheitValue}/>
+                                        </div>
                                 </div>
                             </div>
                         </div>
